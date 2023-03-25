@@ -4,13 +4,14 @@ import Pagination from "./Pagination";
 import styled from 'styled-components';
 
 const Main = styled.main`
-  background: #EEE;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+	background: #13262F;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 `
 
 const App: React.FC = () => {
@@ -18,7 +19,7 @@ const App: React.FC = () => {
 	const [visibleData, setVisibleData] = useState([])  // Visible data passed to the data table component
 	const [currentPage, setCurrentPage] = useState(1);; // Current page for pagination
 	const [totalPages, setTotalPages] = useState(0); // Total pages for pagination
-	const [pageSize, setPageSize] = useState(5); // Page size for pagination
+	const [pageSize, setPageSize] = useState(6); // Page size for pagination
 
 	useEffect(() => { // Fetch api data on App component load
 		fetch('https://localhost:3000/api/posts')
@@ -28,7 +29,7 @@ const App: React.FC = () => {
 
 	useEffect(() => {
 		const totalItems = data.length; // Number of items in the api array
-		setTotalPages(Math.floor(totalItems / pageSize)) // Math.floor needed incase the calculation returns a decimal. Total pages needs to be an integer
+		setTotalPages(Math.ceil(totalItems / pageSize)) // Math.ceil needed incase the calculation returns a decimal. Total pages needs to be an integer
 
 		const startIndex = (pageSize * (currentPage - 1));
 		const endIndex = (startIndex + pageSize);
@@ -52,7 +53,7 @@ const App: React.FC = () => {
 			<Pagination
 				currentPage={currentPage}
 				totalPages={totalPages}
-				pageSizes={[5, 10, 20, 40]}
+				pageSizes={[6, 12, 24, 48]}
 				onClick={(i: number) => handlePageChange(i)}
 				onChange={(i: string) => handlePageSizeChange(i)}
 			/>

@@ -38,20 +38,20 @@ Finally, the use of third party libraries and/or components is permitted - and i
 
 These are the minimum requirements for the exercies:
 
-1. Retrieve the data from the mock API.
-1. Output the data in a list, including properties from the data that are appropriate for a list view.
+1. Retrieve the data from the mock API. <!-- DONE -->
+1. Output the data in a list, including properties from the data that are appropriate for a list view. <!-- DONE -->
 1. Implement a category filter - this can be single or multi-select.
-1. Use semantic markup where possible.
+1. Use semantic markup where possible. <!-- DONE -->
 1. Create a responsive layout with HTML and CSS, **this must be suitable for use on a public-facing website**. For example, a grid-based card layout.
 
 ### Additional Exercises
 
 If you have time then demonstrating any of the following would be considered as a bonus:
 
-1. Implement pagination - this can be traditional numbered pages or "load more".
+1. Implement pagination - this can be traditional numbered pages or "load more". <!-- DONE -->
 1. Persist filter state in the query string.
 1. Include animated transitions between application state, e.g. when filtering.
-1. Use styled components instead of plain CSS.
+1. Use styled components instead of plain CSS. <!-- DONE -->
 1. Use client-side routing to create a "detail" page. This page only needs to include the title and author name.
 
 ## Submission

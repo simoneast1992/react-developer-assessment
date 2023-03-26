@@ -8,11 +8,11 @@ const Table = styled.div`
 	height: calc(100vh - 5rem);
 	overflow-y: auto;
 	width: 100%;
-	padding: 0 1rem;
+	padding: 2rem 1rem;
 	transition: padding 0.2s;
 
 	@media only screen and (min-width: 512px) {
-		padding: 0 2rem;
+		padding: 4rem 2rem;
 	}
 
 	.table-inner {
@@ -23,31 +23,15 @@ const Table = styled.div`
 		row-gap: 4rem;
 		column-gap: 2rem;
 		margin: 0 auto;
-		padding-block-end: 4rem;
-	}
-`
-
-const Header = styled.nav`
-	width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
-	height: 20rem;
-	display: flex;
-	align-items: center;
-
-	h1 {
-		color: #FFF;
-		font-size: 2rem;
-		font-weight: 600;
 	}
 `
 
 const TableItem = styled.div`
-	background: #F7F7FF;
-	border-radius: 0.75rem;
+	background: #FFF;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	border: 2px solid #F2F2F2;
 	box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1);
 
 	.table-item_section {
@@ -74,12 +58,12 @@ const TableItem = styled.div`
 			height: 100px;
 			border-radius: 50%;
 			margin-block-end: 2rem;
-			box-shadow: 0 0 2.5rem 5rem #E9E9EF;
+			box-shadow: 0 0 2.5rem 5rem #F2F2F2;
 		}
 
 		h2 {
 			font-size: 1.25rem;
-			color: #13262F;
+			color: #202020;
 			line-height: 1.5;
 		}
 	}
@@ -91,11 +75,11 @@ const TableItem = styled.div`
 	.table-item_categories {
 		flex-grow: 1;
 		padding: 2rem;
-		background: #E9E9EF;
+		background: #F2F2F2;
 
 		ul {
 			font-size: 0.875rem;
-			color: #767676;
+			color: #545454;
 			line-height: 1.5;
 			padding: 0;
 			list-style-position: inside;
@@ -107,7 +91,7 @@ const TableItem = styled.div`
 
 		p {
 			font-size: 0.75rem;
-			color: #13262F;
+			color: #202020;
 			font-weight: 600;
 		}
 	}
@@ -119,12 +103,6 @@ const DataTable = ({
 	return (
 		<>
 			<Table className="table">
-				<Header>
-					<h1>
-						Net Construct - Data Table
-					</h1>
-				</Header>
-				{/* Filter goes here */}
 				<div className="table-inner">
 					{data.map((item: any, i: number) => {
 						return (

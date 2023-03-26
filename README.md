@@ -40,9 +40,9 @@ These are the minimum requirements for the exercies:
 
 1. Retrieve the data from the mock API. <!-- DONE -->
 1. Output the data in a list, including properties from the data that are appropriate for a list view. <!-- DONE -->
-1. Implement a category filter - this can be single or multi-select.
+1. Implement a category filter - this can be single or multi-select. <!-- DONE -->
 1. Use semantic markup where possible. <!-- DONE -->
-1. Create a responsive layout with HTML and CSS, **this must be suitable for use on a public-facing website**. For example, a grid-based card layout.
+1. Create a responsive layout with HTML and CSS, **this must be suitable for use on a public-facing website**. For example, a grid-based card layout. <!-- DONE -->
 
 ### Additional Exercises
 

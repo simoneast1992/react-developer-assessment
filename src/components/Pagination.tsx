@@ -16,7 +16,7 @@ const Pagination = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #42D682;
+	background: #EA6A57;
 
 	.pagination-inner {
 		width: 100%;
@@ -35,9 +35,9 @@ const Pagination = styled.div`
 			position: relative;
 
 			> span {
-				color: #1A161B;
+				color: #202020;
 				font-weight: 600;
-				margin-inline-end: 0.25rem;
+				margin-inline-end: 0.5rem;
 				user-select: none;
 				display: none;
 
@@ -63,9 +63,8 @@ const Button = styled.button`
 	height: 2rem;
 	width: 2rem;
 	border: none;
-	border-radius: 1rem;
 	cursor: pointer;
-	background: #13262F;
+	background: #202020;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -96,54 +95,51 @@ const Button = styled.button`
 	}
 
 	&:hover {
-		background: #001C29;
+		background: #101010;
 	}
 
 	&:focus {
 		outline: 2px solid #FF7E6B;
-		box-shadow: 0 0 0.25rem #FF7E6B;
+		box-shadow: 0 0 0.25rem #202020;
 	}
 `
 
 const PaginationIndicator = styled.div`
 	height: 2rem;
 	width: auto;
-	border-radius: 1rem;
-	background: #F7F7FF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 1rem;
 	font-weight: 600;
 	user-select: none;
+	color: #202020;
 
 	span {
 		margin-inline-start: 0.25rem;
-		color: #FF7E6B;
+		color: #FFF;
 	}
 `
 
 const Select = styled.select`
 	height: 2rem;
 	width: 5rem;
-	border-radius: 1rem;
 	cursor: pointer;
-	background: #13262F;
+	background: #202020;
 	padding: 0 0.75rem;
 	font-weight: 600;
-	color: #F7F7FF;
+	color: #FFF;
 	border: none;
 	outline: none;
 	appearance: none;
 	transition: transform 0.2s;
 
 	&:hover {
-		background: #001C29;
+		background: #101010;
 	}
 
 	&:focus {
 		outline: 2px solid #FF7E6B;
-		box-shadow: 0 0 0.25rem #FF7E6B;
+		box-shadow: 0 0 0.25rem #202020;
 	}
 `
 

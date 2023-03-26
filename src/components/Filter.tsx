@@ -71,6 +71,7 @@ const FilterDropdown = styled.aside`
 	padding: 1rem;
     gap: 0.25rem;
 	top: 2rem;
+	z-index: 1;
 
 	&.visible {
 		opacity: 1;
@@ -105,7 +106,7 @@ const Filter = ({
 	const [dropdownVisible, setDropdownVisible] = useState(false);
 	const [activeFilter, setActiveFilter] = useState('')
 
-	const handleFilterButton = (category: string) => {
+	const handleFilterButton = (category: string) => { // Handles both active styling and provides the filteredCategory to be used in handleCategoryFilter inside App.tsx
 		if (activeFilter === category) {
 			setActiveFilter('');
 			onClick('');
@@ -119,6 +120,7 @@ const Filter = ({
 	return (
 		<div className='filter'>
 			<div className='filter-inner'>
+				{/* Shows currently filtered category so that you can see it without clicking into the filter dropdown */}
 				<div>{activeFilter.length > 0 && <><span>Active Filter</span> - {activeFilter}</>}</div>
 				<FilterButton
 					onClick={() => setDropdownVisible(!dropdownVisible)}

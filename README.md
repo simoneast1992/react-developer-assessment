@@ -49,10 +49,10 @@ These are the minimum requirements for the exercies:
 If you have time then demonstrating any of the following would be considered as a bonus:
 
 1. Implement pagination - this can be traditional numbered pages or "load more". <!-- DONE -->
-1. Persist filter state in the query string.
-1. Include animated transitions between application state, e.g. when filtering.
+1. Persist filter state in the query string. <!-- UNFORTUNATELY RAN OUT OF TIME -->
+1. Include animated transitions between application state, e.g. when filtering. <!-- DONE -->
 1. Use styled components instead of plain CSS. <!-- DONE -->
-1. Use client-side routing to create a "detail" page. This page only needs to include the title and author name.
+1. Use client-side routing to create a "detail" page. This page only needs to include the title and author name. <!-- DONE -->
 
 ## Submission
 
